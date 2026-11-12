@@ -1,74 +1,64 @@
-# Mini-_-Project# DATAGO Global Supply Chain Insights & Logistics Analysis
+# Project Title: Supply Chain, Sales & Delivery Performance Analytics
 
 ## 📌 Project Overview
-An end-to-end data analytics project examining global supply chain operations, shipping performance, order profitability, and delivery bottlenecks using the **DATAGO Global Supply Chain** dataset. The goal of this analysis is to uncover operational inefficiencies and provide data-driven recommendations to improve on-time delivery and profit margins.
+An end-to-end big data analytics project utilizing the **DataCo Supply Chain for Big Data Analysis** dataset to thoroughly examine global logistics operations, sales performance, and delivery efficiency[cite: 1]. This project focuses on processing large-scale supply chain data to evaluate key operational metrics, including **Sales & Profit Analysis**, **Delivery & Late Delivery Performance**, **Product Category breakdown**, **Customer Segmentation**, **Shipping Mode efficiency**, and **Regional variations**[cite: 1]. The primary goal is to uncover complex supply chain bottlenecks, optimize fulfillment processes, and deliver actionable data-driven insights.
 
 ---
 
-## 🎯 Business Problem & Objectives
-Global supply chains often struggle with unpredictable shipping delays, rising fulfillment costs, and regional bottlenecks. This project aims to answer the following key business questions:
-* What is the overall on-time delivery rate vs. late delivery risk across different shipping modes?
-* Which regions, markets, and product categories generate the highest revenue and profit margins?
-* What are the primary drivers behind shipment delays and order cancellations?
-* How can logistics strategies be optimized to reduce transit times and improve customer satisfaction?
+## 🔍 ഇതിൽ ചെയ്യാൻ കഴിയുന്നത് (Key Objectives & Scope)[cite: 1]
+* **Sales & Profit Analysis:** Evaluate total revenue, profit margins, and financial performance across different product categories and markets[cite: 1].
+* **Delivery Performance:** Analyze scheduled vs. real shipping days to track on-time fulfillment rates[cite: 1].
+* **Late Delivery Analysis:** Identify the primary root causes and patterns behind delayed shipments and high-risk orders[cite: 1].
+* **Product Category Analysis:** Discover which product lines drive the highest sales volume versus those facing high return or delay rates[cite: 1].
+* **Customer Segmentation:** Understand customer purchasing behaviors and regional demand patterns[cite: 1].
+* **Shipping Mode Analysis:** Compare delivery efficiencies across different shipping classes (Standard, First Class, Same Day, etc.)[cite: 1].
+* **Regional Performance:** Assess global regional bottlenecks and fulfillment efficiency[cite: 1].
 
 ---
 
 ## 🛠️ Tools & Technologies Used
-* **Data Cleaning & Transformation:** [e.g., Microsoft Excel / Power Query / SQL]
-* **Data Modeling & Calculations:** [e.g., DAX (Data Analysis Expressions)]
-* **Data Visualization:** [e.g., Microsoft Power BI / Tableau]
+* **Data Cleaning & Preparation:** Microsoft Excel 
+* **Data Modeling & Calculations:** DAX (Data Analysis Expressions)
+* **Data Visualization:** Microsoft Power BI 
 * **Version Control:** Git & GitHub
 
 ---
 
-## 📂 Dataset Description
-The dataset comprises **[insert total number of rows, e.g., 180,000+]** transactional records and **[insert number of columns, e.g., 53]** attributes covering order details, customer demographics, shipping schedules, and financial metrics.
-
-* **Key Features Analyzed:**
-  * `Order Date` & `Shipping Date` (Real vs. Scheduled days for shipment)
-  * `Shipping Mode` (Standard Class, First Class, Second Class, Same Day)
-  * `Delivery Status` (Advance Shipping, Shipping on Time, Late Delivery, Shipping Canceled)
-  * `Market` & `Order Region` (Global geographic breakdown)
-  * `Category Name`, `Sales`, & `Order Profit Per Order`
+## 📂 Dataset Source
+* **Dataset Name:** https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis?select=DataCoSupplyChainDataset.csv 
+* **Platform:** Kaggle
 
 ---
 
-## 🧹 Data Cleaning & Preparation
-Before building the dashboard, the raw data underwent the following preparation steps:
-1. **Handling Missing & Irrelevant Data:** Removed duplicate entries, standardized null values, and dropped non-analytical columns (such as customer passwords/emails).
-2. **Data Type Standardization:** Formatted date columns (`Order Date`, `Shipping Date`) and currency fields for accurate time-intelligence and financial calculations.
-3. **Feature Engineering (DAX / Calculated Columns):**
-   * Created variance metrics comparing `Days for shipping (real)` against `Days for shipment (scheduled)`.
-   * Built KPI measures for **Total Sales**, **Total Profit**, **Profit Margin %**, **Total Orders**, and **Late Delivery Rate %**.
-4. **Data Optimization:** [Optional: Mention if you filtered specific years or optimized the data model for performance].
+## 🧹 Data Cleaning & Transformation
+1. **Remove Duplicate**
+2. **Data Type Formatting:**
+3. **Remove Unnecessary Column**
+   -  Home tab  ➡️ Remove Column
+        - Order Zip code  (97% null)
+        - Customer Password (Not given)
+        - Customer Email (NOT)
 
+4.**check Blank Valus**
+5. **Final Data Quality check**
 ---
+##  📱* **Data Modeling & Calculations:**
 
 ## 💡 Key Insights & Findings
-* **Delivery Performance:** **[X%]** of total orders experienced late deliveries, with **[e.g., Standard Class / First Class]** accounting for the highest volume of delayed shipments.
-* **Regional Trends:** **[Insert Top Market/Region, e.g., Western Europe / LATAM]** generated the highest sales volume, whereas **[Insert Region]** showed the highest rate of shipping delays.
-* **Product Profitability:** **[Insert Top Category, e.g., Fishing / Cleats]** led overall revenue, while certain high-discount orders resulted in negative profit margins.
-* **Shipping Mode Trade-offs:** While **Same Day** and **First Class** offer faster transit, tighter scheduling windows led to a higher percentage of missed delivery targets compared to **Standard Class**.
+* **Delivery Risks:** Certain shipping modes experience higher rates of late deliveries due to tight transit windows.
+* **Regional Bottlenecks:** Specific regions face longer transit times, impacting overall customer satisfaction.
+* **Profitability Drivers:** High-performing product categories contribute the majority of the profit margins.
 
 ---
 
 ## 📊 Dashboard Preview
-*(Replace the image path below with the screenshot uploaded to your GitHub repository)*
-
-![Supply Chain Dashboard Overview](images/dashboard_overview.png)
-
----
-
-## 🚀 Strategic Recommendations
-1. **Optimize Shipping Schedules:** Adjust scheduled delivery estimates for **[Specific Shipping Mode]** in high-delay regions to set realistic customer expectations and reduce late-delivery penalties.
-2. **Focus on High-Margin Categories:** Re-evaluate discounting strategies on **[Low-Margin Category]** where high promotional discounts are eroding net profitability.
-3. **Regional Logistics Review:** Partner with alternative regional carriers in **[High-Delay Region]** to resolve recurring customs and transit bottlenecks.
+*(Replace the image path below with your dashboard screenshot)*
+![Supply Chain Dashboard](images/dashboard_preview.png)
 
 ---
 
 ## 💻 How to Use This Repository
-1. Clone this repository to your local machine:
+1. Clone the repository:
    ```bash
    git clone [https://github.com/](https://github.com/)[Your-Username]/[Your-Repository-Name].git
 # DATACO GLOBAL SUPPLY CHAIN INSIGHTS 
