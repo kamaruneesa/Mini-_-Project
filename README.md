@@ -41,14 +41,12 @@
 ---
 ### 🔗 Data Modeling & Relationships (Star Schema)
 
-| Fact Table | Dimension Table | Linking Columns | Cardinality | Cross-Filter Direction | Status |
+| Fact Table | Dimension Table | Linking Columns | Cardinality | Cross-Filter Direction |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `DataCoSupplyChainDataset3` | `Date_Table` | `order date` ➡️ `Date` | Many-to-one (`*:1`) | Single | Active |
-| `tokenized_access_logs1` | `Date_Table` | `Date` ➡️ `Date` | Many-to-one (`*:1`) | Single | Active 
+| `DataCoSupplyChainDataset3` | `Date_Table` | `order date` ➡️ `Date` | Many-to-one (`*:1`) | Single | 
+| `tokenized_access_logs1` | `Date_Table` | `Date` ➡️ `Date` | Many-to-one (`*:1`) | Single | 
 
-| Fact Table | Dimension Table | Linking Columns | Cardinality | Cross-Filter Direction | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `DataCoSupplyChainDataset` | `Date_Table` | `order date` ➡️ `Date` | Many-to-one (`*:1`) | Single | Active |
+
 ---
 
 ## 💡 Key Insights & Findings
