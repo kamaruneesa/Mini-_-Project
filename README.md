@@ -42,7 +42,7 @@
 ### 🔗 Data Modeling & Relationships (Star Schema)
 
 | Fact Table | Dimension Table | Linking Columns | Cardinality | Cross-Filter Direction |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | 
 | `DataCoSupplyChainDataset3` | `Date_Table` | `order date` ➡️ `Date` | Many-to-one (`*:1`) | Single | 
 | `tokenized_access_logs1` | `Date_Table` | `Date` ➡️ `Date` | Many-to-one (`*:1`) | Single | 
 
