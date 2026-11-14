@@ -14,6 +14,7 @@
 ## 📂 Dataset Source
 * **Dataset Name:** https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis?select=DataCoSupplyChainDataset.csv 
 * **Platform:** Kaggle
+* > **Note:** For focused analysis and performance optimization, the dataset was scoped to **2,000 rows** (`2K` total orders) for this dashboard
 
 ---
 
@@ -37,7 +38,8 @@
 4. **Total Orders =** COUNT(DataCoSupplyChainDataset3[Order Id])
 5. **Total Profit =** SUM(DataCoSupplyChainDataset3[Order Profit Per Order])
 6. **Total Sales =** SUM(DataCoSupplyChainDataset3[Sales])
-7. **Late Delivery Rate % =** DIVIDE(CALCULATE(COUNT(DataCoSupplyChainDataset3[Delivery Status]),DataCoSupplyChainDataset3[Delivery Status]= "Late delivery"),COUNT(DataCoSupplyChainDataset3[Delivery Status]),0)
+7. **Profit Margin % =** DIVIDE([Total Profit], [Total Sales], 0)
+8. **Late Delivery Rate % =** DIVIDE(CALCULATE(COUNT(DataCoSupplyChainDataset3[Delivery Status]),DataCoSupplyChainDataset3[Delivery Status]= "Late delivery"),COUNT(DataCoSupplyChainDataset3[Delivery Status]),0)
 ---
 ### 🔗 Data Modeling & Relationships (Star Schema)
 
@@ -48,15 +50,24 @@
 
 
 ---
+### 📊 Key Executive Insights
 
-## 💡 Key Insights & Findings
-* **Delivery Risks:** Certain shipping modes experience higher rates of late deliveries due to tight transit windows.
-* **Regional Bottlenecks:** Specific regions face longer transit times, impacting overall customer satisfaction.
-* **Profitability Drivers:** High-performing product categories contribute the majority of the profit margins.
+* **High Late Delivery Rate:** Nearly half of all orders (**49.90%**) experience delivery delays, indicating a critical bottleneck in logistics.
+* **Strong Financial Performance:** Generated **$483.57K** in total sales and **$48.27K** in profit (~10% margin) across **2K** total orders.
+* **Top Revenue Drivers:** The **Consumer** segment and departments like **Fan Shop** and **Apparel** contribute the highest share of sales.
 
 ---
 
-## 📊 Dashboard Previe
+
+### 📊 Dashboard Visuals & Components
+
+| Visual Type | Title / Metric | Description |
+| :--- | :--- | :--- |
+| **KPI Cards** | Late Delivery Rate %, Total Orders, Total Profit, Total Sales | Highlights core business and logistics metrics at a glance. |
+| **Clustered Column Chart** | Total Profit & Total Sales by Year | Compares yearly revenue and profit performance trend. |
+| **Donut Charts** | Sum of Sales by Department Name & Customer Segment | Illustrates revenue breakdown across different product departments and customer group. |
+| **Horizontal Bar Chart** | Count of Delivery Status | Displays the volume of orders across various delivery states (e.g., Late delivery, Advance shipping). |
+| **Slicers / Filters** | Customer Segment, Department Name, Delivery Status | Enables interactive filtering for dynamic data analysis. |
 
 ---
 
