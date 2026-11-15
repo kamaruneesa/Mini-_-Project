@@ -53,7 +53,7 @@
 ### 📊 Key Executive Insights
 
 * **High Late Delivery Rate:** Nearly half of all orders (**49.90%**) experience delivery delays, indicating a critical bottleneck in logistics.
-* **Strong Financial Performance:** Generated **$483.57K** in total sales and **$48.27K** in profit (~10% margin) across **2K** total orders.
+* **Strong Financial Performance:** Generated **483.57K** in total sales and **48.27K** in profit (~10% margin) across **2K** total orders.
 * **Top Revenue Drivers:** The **Consumer** segment and departments like **Fan Shop** and **Apparel** contribute the highest share of sales.
 
 ---
